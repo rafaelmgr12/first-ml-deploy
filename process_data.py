@@ -5,9 +5,12 @@ from keras.preprocessing.image import img_to_array
 from keras.applications.vgg19 import preprocess_input
 from keras.applications.vgg19 import decode_predictions
 import pickle
+import os
 
-#model = pickle.load(open("../models/vgg19.pkl", "rb"))
-model = tf.keras.models.load_model('../models/vgg19.h5', compile=False)
+
+#model = pickle.load(open("./models/vgg19.pkl", "rb"))
+model = tf.keras.models.load_model('./models/vgg19.h5', compile=False)
+#model = tf.keras.models.load_model('../models/vgg19')
 
 def process_image(image):
     '''

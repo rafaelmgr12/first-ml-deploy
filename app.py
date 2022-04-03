@@ -4,8 +4,6 @@ from flask import Flask, render_template, request
 from flask_uploads import UploadSet, configure_uploads, IMAGES
 from keras.preprocessing.image import load_img
 # the pretrained model
-import sys
-sys.path.append('src')
 from process_data import *
 
 app = Flask(__name__)

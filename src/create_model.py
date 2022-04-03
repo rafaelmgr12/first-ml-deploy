@@ -12,5 +12,6 @@ model = tf.keras.applications.VGG19(
         classifier_activation = "softmax",)
 
 
+#model.save("../models/vgg19")
 model.save("../models/vgg19.h5")
-#pickle.dump(model, open("../models/vgg19.pkl", "wb"))
+# pickle.dump(model, open("../models/vgg19.pkl", "wb"))
