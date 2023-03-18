@@ -36,25 +36,3 @@ Once this is running, you should be able to view your app running in your browse
 http://localhost:5000/upload
 ```
 
-## Deploy :computer:
-We can deploy this project [Heroku](https://www.heroku.com/), the steps are:
-
-**1.** Create a new [Heroku account](https://signup.heroku.com/) if you don’t have one. Then download Heroku [Command Line Interface (CLI)](https://devcenter.heroku.com/articles/heroku-cli#download-and-install) which makes it easy to create and manage your Heroku apps directly from the terminal.
-
-**2.** Login to your Heroku account using `# heroku login`
-
-**3.** Log in to Container Registry: `# heroku container:login`
-
-**4.** Create a new Heroku app: `# heroku create <app-name>`
-
-**5.** Build the image based on your Dockefile and push it to this particular app in Heroku `# heroku container:push web --app <app-name>`
-
-**6.** Now release the container with `# docker container:release`
-
-**7.** You can finally open up your Heroku application through the command `# heroku open --app <app-name>`
-
-
-# Next Steps
-* [ ] Construct an end-to-end machine learning application, not using pre-trained model.
-* [ ] Solve Heroku bugs that need to fixes.
-* [ ] Deploy a ML API and using construct a Web application.
